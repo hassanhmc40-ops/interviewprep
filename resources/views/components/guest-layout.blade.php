@@ -25,8 +25,8 @@
                         </div>
                         <span class="text-xl font-bold text-slate-800">InterviewPrep</span>
                     </a>
-                    <a href="{{ route('home') }}" class="text-sm text-slate-600 hover:text-slate-900">
-                        <svg class="w-5 h-5 inline mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <a href="{{ route('home') }}" class="text-sm text-slate-600 hover:text-slate-900 flex items-center">
+                        <svg class="w-4 h-4 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
                         </svg>
                         Back to Home
@@ -37,7 +37,9 @@
             <!-- Main Content -->
             <main class="flex-1 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
                 <div class="w-full max-w-md">
-                    {{ $slot }}
+                    <div class="bg-white py-8 px-6 shadow-xl rounded-2xl border border-slate-100">
+                        {{ $slot }}
+                    </div>
                 </div>
             </main>
 
