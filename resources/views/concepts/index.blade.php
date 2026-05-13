@@ -20,7 +20,7 @@
                     <div class="w-3 h-3 rounded-full mr-2" style="background-color: {{ $domain->color }}"></div>
                     <h1 class="text-2xl font-bold text-slate-900">{{ $domain->name }} - Concepts</h1>
                 </div>
-                <a href="{{ route('domain.concepts.create', $domain) }}" class="inline-flex items-center px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors">
+                <a href="{{ route('domains.concepts.create', $domain) }}" class="inline-flex items-center px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors">
                     <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
                     </svg>
@@ -112,7 +112,7 @@
                     title="No concepts found"
                     message="Start by adding concepts to this domain."
                     actionText="Add Concept"
-                    actionUrl="{{ route('domain.concepts.create', $domain) }}"
+                    actionUrl="{{ route('domains.concepts.create', $domain) }}"
                 />
             @endforelse
         </div>

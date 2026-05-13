@@ -10,6 +10,8 @@ class GeneratedQuestion extends Model
 {
     use HasFactory;
 
+    public $timestamps = false;
+
     protected $fillable = [
         'concept_id',
         'question',

@@ -45,7 +45,7 @@ InterviewPrep is a personal web application designed to help a developer structu
 - Query optimization: use eager loading to avoid N+1 queries
 
 **US3 – Create a Domain**
-- Form to create new domain with:
+- Form to create new domain with: 
   - Name field (e.g., "Laravel ORM", "PHP OOP", "MySQL")
   - Badge color selection (for visual differentiation)
 - Store in `domains` table with `user_id` FK

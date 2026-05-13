@@ -18,7 +18,7 @@
             <div class="bg-white rounded-xl shadow-sm border border-slate-100 p-6">
                 <h1 class="text-2xl font-bold text-slate-900 mb-6">Add New Concept</h1>
 
-                <form method="POST" action="{{ route('domain.concepts.store', $domain) }}">
+                <form method="POST" action="{{ route('domains.concepts.store', $domain) }}">
                     @csrf
 
                     <!-- Title -->
