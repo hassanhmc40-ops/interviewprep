@@ -35,7 +35,7 @@ class AIController extends Controller
                     'Content-Type' => 'application/json',
                 ])
                 ->post('https://api.groq.com/openai/v1/chat/completions', [
-                    'model' => 'llama3-70b-8192',
+                    'model' => 'mixtral-8x7b-32768',
                     'messages' => [
                         [
                             'role' => 'user',
