@@ -10,8 +10,6 @@ class GeneratedQuestion extends Model
 {
     use HasFactory;
 
-    public $timestamps = false;
-
     protected $fillable = [
         'concept_id',
         'question',
@@ -19,7 +17,6 @@ class GeneratedQuestion extends Model
     ];
 
     protected $casts = [
-        'question' => 'array',
         'generated_at' => 'datetime',
     ];
 
