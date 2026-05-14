@@ -53,7 +53,7 @@
                         Apply Filters
                     </button>
                     @if(request('status') || request('difficulty'))
-                        <a href="{{ route('domain.concepts', $domain) }}" class="px-4 py-2 text-sm text-slate-600 hover:text-slate-900">
+                        <a href="{{ route('domains.concepts.index', $domain) }}" class="px-4 py-2 text-sm text-slate-600 hover:text-slate-900">
                             Clear
                         </a>
                     @endif
